@@ -48,10 +48,10 @@ const dates = computed(() => {
 .side-task
   position: absolute
   width: 500px
-  right: 0
-  top: 80px
-  background-color: #333
-  border: 1px solid #979797
+  right: 20px
+  top: 100px
+  background-color: #1d1e1f
+  border: 1px solid #414243
   height: 80vh
   padding: 12px
   border-radius: 12px

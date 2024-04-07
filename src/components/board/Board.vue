@@ -10,7 +10,7 @@
 <script lang="ts" setup>
 import { useColumnsStore } from "../../store/columns"
 import Column from "../column/Column.vue"
-import {useTasksStore} from "../../store/tasks.ts"
+import {useTasksStore} from "../../store/tasks"
 
 const columnStore = useColumnsStore()
 const tasksStore = useTasksStore()
@@ -22,4 +22,6 @@ const tasksStore = useTasksStore()
   column-gap: 20px
   overflow-x: scroll
   min-height: 80vh
+  padding: 20px
+  border-radius: 20px
 </style>

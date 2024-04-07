@@ -8,8 +8,8 @@
 </template>
 
 <script lang="ts" setup>
-import { useCommonStore } from "../../store/common.ts";
-import { ITag } from "../../types";
+import { useCommonStore } from "../../store/common"
+import { ITag } from "../../types"
 
 const props = defineProps({
   tag: {

@@ -28,9 +28,9 @@
 <script lang="ts" setup>
 import { defineAsyncComponent, PropType } from "vue"
 import { ITask } from "../../types/task"
-import { formatTimeDifferenceFromNow } from "../../helpers/date";
-import CommonTag from "../common/CommonTag.vue";
-import {useTasksStore} from "../../store/tasks.ts";
+import { formatTimeDifferenceFromNow } from "../../helpers/date"
+import CommonTag from "../common/CommonTag.vue"
+import { useTasksStore } from "../../store/tasks"
 
 const props = defineProps({
   task: {
@@ -59,10 +59,15 @@ const taskClick = () => {
 
 <style lang="sass" scoped>
 .task
-  background-color: #333
+  background-color: #1d1e1f
+  border: 1px solid #414243
   border-radius: 10px
-  padding: 12px 8px
+  padding: 12px 16px
   cursor: pointer
+  transition: all 0.3s
+
+  &_title
+    font-size: 14px
 
   &_content
     display: flex
@@ -76,7 +81,7 @@ const taskClick = () => {
       font-size: 12px
       background-color: var(--status-color)
       width: fit-content
-      padding: 2px 4px
+      padding: 2px 6px
       border-radius: 10px
       display: flex
       justify-content: center
@@ -92,5 +97,5 @@ const taskClick = () => {
       column-gap: 8px
 
 .task:hover
-  box-shadow: 0 0 8px #a5a5a5
+  transform: scale(1.06)
 </style>

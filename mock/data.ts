@@ -89,20 +89,27 @@ const columns: IColumn[] = [
         id: uuid(),
         name: statuses[0].name,
         order: 1,
-        statusColor: '#747bff',
+        statusColor: 'rgba(116,123,255,0.52)',
         statusIcon: 'clock'
     },
     {
         id: uuid(),
         name: statuses[1].name,
         order: 2,
-        statusColor: '#2fb126',
+        statusColor: 'rgba(47,177,38,0.49)',
         statusIcon: 'clock'
     },
     {
         id: uuid(),
         name: statuses[2].name,
         order: 3,
+        statusColor: '#a5a5a5',
+        statusIcon: 'clock'
+    },
+    {
+        id: uuid(),
+        name: statuses[3].name,
+        order: 4,
         statusColor: '#a5a5a5',
         statusIcon: 'clock'
     }
